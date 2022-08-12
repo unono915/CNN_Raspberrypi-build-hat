@@ -135,7 +135,7 @@ def createModel():
   model.add(Dense(100, activation = 'elu'))
   model.add(Dense(50, activation = 'elu'))
   model.add(Dense(10, activation = 'elu'))
-  model.add(Dense(1))
+  model.add(Dense(4))
 
   model.compile(Adam(lr=0.0001),loss='mse')
   return model
